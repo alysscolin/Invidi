@@ -1,6 +1,11 @@
 package com.invidi.simplewebserver.context;
 
-public interface WebServerContext {
+import com.invidi.simplewebserver.main.Handler;
 
-   // TODO: Add methods for supporting static resources and controller mapping
+
+public interface WebServerContext {
+    //set the handler for this http method and path
+    void setHandler(String method, String path, Handler handler);
+
+
 }
